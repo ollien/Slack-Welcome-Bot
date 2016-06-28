@@ -14,4 +14,4 @@ while True:
             message = "Welcome to the New Ro-Bots Slack, @{}! Please make sure to download this on your phone so we can get your attention! The app is available on both iOS and Android.".format(username)
             slackClient.api_call("chat.postMessage", channel="#general",
                 text=message, username="The New Ro-Bot", link_names = True)
-    time.sleep(5)
+    time.sleep(.1)
