@@ -9,4 +9,4 @@ RUN apt-get install -y python3.5 python3-pip
 COPY requirements.txt /root/requirements.txt
 COPY main.py /root/main.py
 RUN pip3 install -r /root/requirements.txt
-CMD ["python3 ~/main.py"]
+CMD ["python3 /root/main.py"]
