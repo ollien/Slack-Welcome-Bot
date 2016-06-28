@@ -9,5 +9,5 @@ RUN apt-get install -y python3.5 python3-pip
 COPY requirements.txt ~/requirements.txt
 COPY main.py ~/main.py
 RUN cd ~/
-RUN pip3 install -r requirements.txt
-CMD ["python3 main.py"]
+RUN pip3 install -r ~/requirements.txt
+CMD ["python3 ~/main.py"]
