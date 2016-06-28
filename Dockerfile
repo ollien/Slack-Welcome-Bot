@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER Nick Krichevsky <nick@ollien.com>
 
 RUN apt-get update
-RUN apt-get install software-properties-common
+RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:fkrull/deadsnakes
 RUN apt-get update
 RUN apt-get install -y python3.5 python3-pip
