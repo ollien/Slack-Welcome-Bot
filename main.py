@@ -4,7 +4,6 @@ import os
 
 slackClient = slackclient.SlackClient(os.environ["SLACK_TOKEN"])
 slackClient.rtm_connect()
-slackClient.api_call("channels.join", name="#electrical")
 lastPingTime = 0
 while True:
     for message in slackClient.rtm_read():
