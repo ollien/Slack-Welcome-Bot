@@ -2,7 +2,7 @@ import slackclient
 import time
 import os
 
-slackClient = slackClient.SLackClient(os.environ["SLACK_TOKEN"])
+slackClient = slackclient.SlackClient(os.environ["SLACK_TOKEN"])
 slackClient.rtm_connect()
 
 while True:
