@@ -1,4 +1,6 @@
-*.DS_STORE
+.DS_STORE
 __pycache__
 __pycahce/*
+venv
+venv/*
 *.pyc
