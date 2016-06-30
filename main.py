@@ -11,7 +11,8 @@ while True:
             username = message["user"]["name"]
             message = "Welcome to the New Ro-Bots Slack, @{}! Please make sure to download this on your phone so we can get your attention! The app is available on both iOS and Android.".format(username)
             slackClient.api_call("chat.postMessage", channel="#general",
-                text=message, username="The New Ro-Bot", link_names = True)
+                text=message, username="The New Ro-Bot", icon_emoji=":wave:",
+                link_names = True)
 
     now = time.time()
     if now - lastPingTime >= 3:
