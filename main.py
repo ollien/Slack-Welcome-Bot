@@ -5,6 +5,7 @@ import os
 slackClient = slackclient.SlackClient(os.environ["SLACK_TOKEN"])
 slackClient.rtm_connect()
 lastPingTime = 0
+print(os.environ)
 while True:
     for message in slackClient.rtm_read():
         if message["type"] == "team_join":
