@@ -4,4 +4,4 @@ config:
     friendly_name: Welcome message
     type: text
     default: Welcome to the Slack {}!
-    global: false
+    global: true
