@@ -1,0 +1,6 @@
+name: Welcome Bot
+config:
+  - name: WELCOME_MESSAGE
+    friendly_name: Welcome message
+    default: Welcome to the Slack!
+    global: false
