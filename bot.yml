@@ -3,5 +3,5 @@ config:
   - name: WELCOME_MESSAGE
     friendly_name: Welcome message
     type: text
-    default: Welcome to the Slack!
+    default: Welcome to the Slack {}!
     global: false
