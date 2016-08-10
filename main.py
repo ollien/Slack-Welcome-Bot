@@ -9,9 +9,9 @@ while True:
     for message in slackClient.rtm_read():
         if message["type"] == "team_join":
             username = message["user"]["name"]
-            message = {}.format(username)
+            body = os.environ["WELCOME_MESSAGE"].format(username)
             slackClient.api_call("chat.postMessage", channel="#general",
-                text=message, username="The New Ro-Bot", icon_emoji=":wave:",
+                text=body, username="The New Ro-Bot", icon_emoji=":wave:",
                 link_names = True)
 
     now = time.time()
