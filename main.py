@@ -11,7 +11,7 @@ while True:
             username = message["user"]["name"]
             body = os.environ["WELCOME_MESSAGE"].format(username)
             slackClient.api_call("chat.postMessage", channel="#general",
-                text=body, username="The New Ro-Bot", icon_emoji=":wave:",
+                text=body, username=os.environ["SLACK_NAME"], icon_emoji=":wave:",
                 link_names = True)
 
     now = time.time()

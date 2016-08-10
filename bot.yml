@@ -5,3 +5,8 @@ config:
     type: text
     default: Welcome to the Slack {}!
     global: true
+  - name: SLACK_NAME
+    friendly_name: Slack name
+    type: text
+    default: Bot
+    global: true
