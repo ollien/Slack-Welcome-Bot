@@ -9,7 +9,7 @@ while True:
     for message in slackClient.rtm_read():
         if message["type"] == "team_join":
             username = message["user"]["name"]
-            message = "Welcome to the New Ro-Bots Slack, @{}! Please make sure to download this on your phone so we can get your attention! The app is available on both iOS and Android.".format(username)
+            message = {}.format(username)
             slackClient.api_call("chat.postMessage", channel="#general",
                 text=message, username="The New Ro-Bot", icon_emoji=":wave:",
                 link_names = True)
